@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us
+		</title>
+	</head>
+	<body>
+	
+		<form action="fakePage.html" method="POST">
+			<table>
+				<tr>
+				  <td align="right">First Name:</td>
+				  <td align="left"><input type="text" name="firstName" /><br /><br /></td>
+				</tr>
+				<tr>
+				  <td align="right">Last Name:</td>
+				  <td align="left"><input type="text" name="lastName" /><br /><br /></td>
+				</tr>
+				<tr>
+				  <td align="right">Email:</td>
+				  <td align="left"><input type="text" name="email" /><br /><br /></td>
+				</tr>
+				<tr>
+					<td align="right">Type of License:</td>
+					<td align="left"><input type="radio" name="answer" value="Business" checked/>Business <input type="radio" name="answer" value="Personal" />Personal<br /><br />
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Reason:</td>
+					<td align="left">
+						<select name="Options">
+							<option value="Select">Select a Reason</option>
+							<option value="Software">Software Support</option>
+							<option value="Hardware">Hardware Support</option>				
+							<option value="Information">Information Request</option>
+						</select><br /><br />
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Additional Information:</td>
+					<td align="left"><textarea rows="5" cols="30" name="additionalInformation"></textarea><br /><br /></td>
+				</tr>
+				<tr>
+					<td align="right"></td>
+					<td align="left"><input type="checkbox" name="terms" value="terms" />I have read the terms of service.<br /><br /></td>
+				</tr>
+				<tr>
+					<td align="right"></td>
+					<td align="center"><input type="submit" value="Send Request"/><br /><br /></td>
+				</tr>				
+		</table>
+		</form>
+	</body>
+</html>
