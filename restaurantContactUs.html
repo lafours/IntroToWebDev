@@ -1,82 +1,144 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Contact Us
+		<title>Beck's Pub
 		</title>
+		<!-- internal style sheet -->
+		<style>
+			body {
+				font-family: Comic Sans MS, Comic Sans, cursive;
+				margin:0;
+				padding:0;
+				height:100%;
+				}
+
+			#main {
+				padding:10px;
+				padding-bottom:60px;  
+				}
+				
+			#container {
+			   min-height:100%;
+			   position:relative;
+			}
+			
+			td {
+				padding: 8px 2px 1px 2px;
+				vertical-align: 50px;
+				text-align: right;
+			}
+			
+			select {
+				 width: 175px;
+				}
+				
+			textarea {
+				width: 13em;
+				height: 7em;
+				vertical-align: top;
+				}
+			
+			#radio {
+				text-align: left;
+				margin-right: 5px;
+				}
+				
+			#checkbox {
+				vertical-align: top;
+				}
+				
+			div.form
+			{
+				display: block;
+				text-align: center;
+			}
+			form
+			{
+				display: inline-block;
+				margin-left: auto;
+				margin-right: 280px;
+				text-align: left;
+			}
+		</style>
+		<!-- external style sheet -->
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css"> 
 	</head>
-	<body>
-		<div>
-		<h1 align="center">Beck's Pub</h1>
-		<hr />
-		<table cellspacing="10">
-			<tr>
-				<td align="center"><a href="restaurantHome.html">Home</a></td>
-				<td><a href="Menu.html">Menu</a></td>
-				<td><a href="restaurantContactUs.html">Contact Us</a></td>
-			</tr>
-		</table>
-		<hr />
-		</div>
-	
-		<div>
-		<form action="fakePage.html" method="POST">
-			<table cellspacing="5">
-				<tr>
-				  <td align="right" VALIGN=TOP>Name:</td>
-				  <td align="left"><input type="text" name="name" /><br /><br /></td>
-				</tr>
-				<tr>
-				  <td align="right" VALIGN=TOP>Email:</td>
-				  <td align="left"><input type="text" name="email" /><br /><br /></td>
-				</tr>
-				<tr>
-				  <td align="right" VALIGN=TOP>Phone:</td>
-				  <td align="left"><input type="text" name="phone" /><br /><br /></td>
-				</tr>
-				<tr>
-					<td align="right" VALIGN=TOP>Reason for Inquiry:</td>
-					<td align="left">
-						<select name="reason" width="230" style="width: 175px">
-							<option value="catering">Catering</option>
-							<option value="privateParty">Private Party</option>
-							<option value="feedback">Feedback</option>				
-							<option value="other">Other</option>
-						</select><br /><br />
-					</td>
-				</tr>
-				<tr>
-					<td align="right" VALIGN=TOP>Additional Information:</td>
-					<td align="left"><textarea rows="7" cols="22" name="additionalInformation"></textarea><br /><br /></td>
-				</tr>
-				<tr>
-					<td align="right" VALIGN=TOP>Have you been to the restaurant?</td>
-					<td align="left"><input type="radio" name="answer" value="no" checked/>No <input type="radio" name="answer" value="yes" />Yes<br /><br />
-					</td>
-				</tr>
-				<tr>	
-					<td align="right" VALIGN=TOP>Best days to contact you?</td>
-					<td align="left"><sub>
-						<input type="checkbox" name="bestDays" value="monday" />M
-						<input type="checkbox" name="myChoices" value="tuesday" />T
-						<input type="checkbox" name="myChoices" value="wednesday" />W
-						<input type="checkbox" name="myChoices" value="thursday" />Th
-						<input type="checkbox" name="myChoices" value="friday" />F</sub><br /><br />
-					</td>
-				</tr>
-				<tr>
-					<td align="right" VALIGN=TOP></td>
-					<td align="right"><input type="submit" value="Send Request"/><br /><br /><br /><br /><br /><br /><br /></td>
-				</tr>				
-		</table>
-		</form>
+	<body>		
+	<div id="container">
+		<!-- header -->
+		<div id="header">
+			Beck's Pub
 		</div>
 		
 		<div>
-		<hr />
-		<footer align="center">
-		  <p>27 Riverdale Way, Akron, OH 44333</p>
-		  <p>(272) 727-2727</p>
-		</footer>
+		<ul class="ul">
+		  <li class="li"><a href="restaurantHome.html">Home</a></li>
+		  <li class="li"><a href="Menu.html">Menu</a></li>
+		  <li class="li"><a href="restaurantContactUs.html">Contact Us</a></li>
+		</ul>
 		</div>
+	
+		<div id="main">
+		<div class="form">
+			<form action="fakePage.html" method="POST">
+				<table>
+					<tr>
+					  <td>Name:</td>
+					  <td><input type="text" name="name" /></td>
+					</tr>
+					<tr>
+					  <td>Email:</td>
+					  <td><input type="text" name="email" /></td>
+					</tr>
+					<tr>
+					  <td>Phone:</td>
+					  <td><input type="text" name="phone" /></td>
+					</tr>
+					<tr>
+						<td>Reason for Inquiry:</td>
+						<td>
+							<select name="reason">
+								<option value="catering">Catering</option>
+								<option value="privateParty">Private Party</option>
+								<option value="feedback">Feedback</option>				
+								<option value="other">Other</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Additional Information:</td>
+						<td><textarea name="additionalInformation"></textarea></td>
+					</tr>
+					<tr>
+						<td>Have you been to the restaurant?</td>
+						<td id="radio"><input type="radio" name="answer" value="no" checked/>No <input type="radio" name="answer" value="yes" />Yes
+						</td>
+					</tr>
+					<tr>	
+						<td>Best days to contact you?</td>
+						<td id="checkbox">
+							<input type="checkbox" name="bestDays" value="monday" />M
+							<input type="checkbox" name="myChoices" value="tuesday" />T
+							<input type="checkbox" name="myChoices" value="wednesday" />W
+							<input type="checkbox" name="myChoices" value="thursday" />Th
+							<input type="checkbox" name="myChoices" value="friday" />F
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Send Request"/></td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		</div>
+		
+		<!-- footer -->
+		<div id="footer">
+			<p>27 Riverdale Way, Akron, OH 44333</p>
+			<p>(272) 727-2727</p>
+		</div>
+		
 	</body>
 </html>

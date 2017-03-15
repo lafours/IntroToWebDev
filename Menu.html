@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Menu
+		<title>Beck's Pub
 		</title>
+		<!-- internal style sheet -->
+		<style>
+			td {
+				padding: 8px 2px;
+			}
+			table {
+				text-align: center;
+				border-collapse: separate;
+				border-spacing: 20px;
+			}
+			
+			.menuBox {
+				border: none;
+				position: relative;
+				margin: 10px 50px 50px 350px;
+				}
+		</style>
+		<!-- external style sheet -->
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div>
-		<h1 align="center">Beck's Pub</h1>
-		<hr />
-		<table cellspacing="10">
-			<tr>
-				<td align="center"><a href="restaurantHome.html">Home</a></td>
-				<td><a href="Menu.html">Menu</a></td>
-				<td><a href="restaurantContactUs.html">Contact Us</a></td>
-			</tr>
-		</table>
-		<hr />
+		<!-- header -->
+		<div id="header">
+			Beck's Pub
 		</div>
 		
 		<div>
-		<table cellspacing="50" align="center">
+		<ul class="ul">
+		  <li class="li"><a href="restaurantHome.html">Home</a></li>
+		  <li class="li"><a href="Menu.html">Menu</a></li>
+		  <li class="li"><a href="restaurantContactUs.html">Contact Us</a></li>
+		</ul>
+		</div>
+				
+		<div class="menuBox">
+		<table>
 			<tr>
-			  <td align="center"><h3>Burger and Fries</h3>
+			  <td><h3>Burger and Fries</h3>
 			  <p>
 				An American Classic!<br />
 				Your choice - with or without cheese<br/>
@@ -31,7 +50,7 @@
 				$7.95
 				</p>
 			  </td>
-			  <td align="center"><h3>Hot Dog and Chips</h3>
+			  <td><h3>Hot Dog and Chips</h3>
 			  <p><br />
 				A Summer Classic<br />
 				Your choice - white or wheat bun<br/>
@@ -40,7 +59,7 @@
 				$7.95
 				</p>
 			  </td>
-			  <td align="center"><h3>Italian Sausage and Peppers</h3>
+			   <td><h3>Italian Sausage and Peppers</h3>
 			  <p><br />
 				An All-Time Favorite!<br />
 				Your choice - mild or spicy<br/>
@@ -51,7 +70,7 @@
 			  </td>
 			</tr>
 			<tr>				 
-			  <td align="center"><h3>Tenderloin Sandwich and Chips</h3>
+			  <td><h3>Tenderloin Sandwich and Chips</h3>
 			  <p><br />
 				Really Hits the Spot!<br />
 				Plain or Sesame Seed Bun<br/>
@@ -60,7 +79,7 @@
 				$8.95
 				</p>
 			  </td>
-			  <td align="center"><h3>House Salad</h3>
+			  <td><h3>House Salad</h3>
 			  <p>
 				On the Lighter Side<br />
 				Your choice - with or without cheese<br/>
@@ -70,7 +89,7 @@
 				$6.95
 				</p>
 			  </td>
-			  <td align="center"><br /><h3>Brisket Sandwich and Fries</h3>
+			  <td><br /><h3>Brisket Sandwich and Fries</h3>
 			  <p>
 				A Taste of Texas!<br />
 				Smoked Brisket on thick-cut Texas<br/>
@@ -85,12 +104,11 @@
 		</table>
 		</div>
 		
-		<div>
-		<hr />
-			<footer align="center">
-			  <p>27 Riverdale Way, Akron, OH 44333</p>
-			  <p>(272) 727-2727</p>
-			</footer>
+		<!-- footer -->
+		<div id="footer">
+			<p>27 Riverdale Way, Akron, OH 44333</p>
+			<p>(272) 727-2727</p>
 		</div>
+		
 	</body>
 </html>
